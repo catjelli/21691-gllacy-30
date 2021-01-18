@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Valery](https://up.htmlacademy.ru/htmlcss/30/user/21691).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Вадясова](https://htmlacademy.ru/profile/ad0v0).
 
 ---
 
