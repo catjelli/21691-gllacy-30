@@ -50,7 +50,7 @@ body {
   font-size: 16px;
   line-height: 18px;
   color: rgb(var(--basic-white));
-  background-color: var(--background-brown);
+  background-color: var(--background-green);
 }
 
 img {
@@ -112,7 +112,7 @@ a {
   list-style: none;
 }
 
-.site-navigation a {
+.site-navigation-link {
   border-bottom: 1px solid rgba(var(--basic-white), 0.2);
 }
 
@@ -128,12 +128,12 @@ a {
 }
 
 .user-navigation a:hover,
-.site-navigation a:hover {
+.site-navigation-link:hover {
   color: var(--grey);
   background-color: rgb(var(--basic-white));
 }
 
-.site-navigation a:active {
+.site-navigation-link:active {
   color: var(--grey);
   background-color: rgb(var(--basic-white));
 }
@@ -196,11 +196,11 @@ a {
 
 /* Goods */
 
-.hit-list {
+.goods-list {
   list-style: none;
 }
 
-.hit-item:hover {
+.goods-item:hover {
   background-color: rgba(var(--basic-white), 0.2);
 }
 
@@ -215,13 +215,17 @@ a {
   line-height: 35px;
 }
 
+.goods-item-pic {
+  border-radius: 50%;
+}
+
 /* About */
 
 .about {
   color: var(--grey);
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
+
   background: var(--background-waffle);
 }
 
@@ -271,7 +275,6 @@ a {
   color: var(--grey);
   font-size: 14px;
   line-height: 20px;
-  font-weight: 400;
 }
 
 .contacts-tel,
@@ -311,8 +314,6 @@ a {
 .links-list {
   list-style: none;
   font-size: 13px;
-  line-height: 18px;
-  font-weight: 400;
 }
 
 .links-list li:first-child {
@@ -321,6 +322,122 @@ a {
 
 .copyright {
   font-size: 12px;
+}
+
+/* Catalog */
+
+.site-navigation-current {
+  background-color: var(--active-orange);
+}
+
+.catalog-header {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+/* Bread Crumbs */
+
+.bread-crumbs-list {
+  list-style: none;
+}
+
+.bread-crumbs-item {
+  font-size: 14px;
+  line-height: 16px;
+
+  color: rgb(var(--basic-white));
+}
+
+.bread-crumbs-item a {
+  color: inherit;
+  border-bottom: 1px solid rgba(var(--basic-white), 0.2);
+}
+
+/* Search Filter */
+
+.filter {
+  font-size: 16px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: 500;
+}
+
+.filter legend {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filter ul {
+  list-style: none;
+  background-color: rgba(var(--basic-white), 0.2);
+}
+
+.filter-range {
+  background-color: rgba(var(--basic-white), 0.2);
+}
+
+.filter-range input {
+  cursor: pointer;
+}
+
+.filter-select {
+  color: rgb(var(--basic-white));
+  background-color: rgba(var(--basic-white), 0.2);
+  border: transparent;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.filter-select:hover {
+  color: var(--grey);
+  background-color: rgb(var(--basic-white));
+}
+
+
+.filter-button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: rgb(var(--basic-white));
+  background-color: rgba(var(--basic-white), 0.2);
+  border: 2px solid rgb(var(--basic-white));
+}
+
+.filter-button:hover {
+  color: var(--grey);
+  background-color: rgb(var(--basic-white));
+  border: none;
+}
+
+.filter-button:active {
+  color: var(--grey);
+  background-color: rgb(var(--basic-white));
+  border: none;
+  box-shadow: inset 0px 2px 1px var(--shadow-grey);
+}
+
+/* Pagination */
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: rgb(var(--basic-white));
+}
+
+.pagination-item:first-child {
+  color: var(--grey);
+  background-color: rgb(var(--basic-white));
+}
+
+.pagination-item:hover a {
+  background-color: rgba(var(--basic-white), 0.2);
+  cursor: pointer;
+}
+
+.pagination-item:active a {
+  color: var(--grey);
+  background-color: rgb(var(--basic-white));
 }
