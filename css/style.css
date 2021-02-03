@@ -1,6 +1,7 @@
-/* Main colors */
 
 :root {
+  /* === MAIN COLORS === */
+
   --button-gradient: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
   --button-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
   --button-active: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
@@ -32,19 +33,19 @@
   --input-grey: #999999;
   --contacts-white: #FEFEFE;
 
-  /* Background Images Colors */
+  /* === BACKGROUND IMAGE COLORS === */
   --background-raspberry: #5D0220;
   --background-chocolate: #2F150A;
   --background-waffle: #EFE3C9;
 }
 
-/* Global*/
+/* === GLOBAL === */
 
 body {
   min-width: 1146px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -62,11 +63,12 @@ a {
   text-decoration: none;
 }
 
-/* Buttons */
+/* === BUTTONS === */
 
 .button {
   color: rgb(var(--basic-white));
   background: var(--button-gradient);
+  font-family: inherit;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -81,7 +83,7 @@ a {
   background: var(--button-active);
 }
 
-/* Links */
+/* === LINKS === */
 
 .link-light {
   color: rgb(var(--basic-white));
@@ -105,7 +107,7 @@ a {
   border-bottom: 1px solid rgba(var(--pin-orange), 0.3);
 }
 
-/* Navigation */
+/* === NAVIGATION === */
 
 .site-navigation {
   font-weight: 700;
@@ -151,7 +153,7 @@ a {
   font-weight: 700;
 }
 
-/* Slider */
+/* === SLIDER === */
 
 .slider-list {
   list-style: none;
@@ -170,56 +172,57 @@ a {
 .slider-button {
   font-size: 32px;
   line-height: 44px;
+  letter-spacing: 0.05em;
 }
 
-/* Stock */
+/* === SPECIAL OFFER === */
 
-.stock-item-header {
+.special-offer-item-header {
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
 }
 
-.stock-item-info {
+.special-offer-item-info {
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
 }
 
-.stock-chocolate {
+.special-offer-chocolate {
   background: var(--background-chocolate);
 }
 
-.stock-raspberry {
+.special-offer-raspberry {
   background: var(--background-raspberry);
 }
 
-/* Goods */
+/* === CATALOG === */
 
-.goods-list {
+.catalog-list {
   list-style: none;
 }
 
-.goods-item:hover {
+.catalog-item:hover {
   background-color: rgba(var(--basic-white), 0.2);
 }
 
-.goods-price {
+.product-price {
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
 }
 
-.goods-weight {
+.product-weight {
   font-size: 30px;
   line-height: 35px;
 }
 
-.goods-item-pic {
+.product-image-wrapper img {
   border-radius: 50%;
 }
 
-/* About */
+/* === ABOUT === */
 
 .about {
   color: var(--grey);
@@ -235,7 +238,7 @@ a {
   font-weight: 500;
 }
 
-/* Blog */
+/* === BLOG === */
 
 .blog {
   color: var(--grey);
@@ -247,11 +250,11 @@ a {
 
 .blog-header {
   font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
+  line-height: 22px;
+  font-weight: 500;
 }
 
-/* Subscribe */
+/* === SUBSCRIBE === */
 
 .subscribe {
   line-height: 22px;
@@ -259,12 +262,16 @@ a {
   background: rgb(var(--basic-white));
 }
 
-.subscribe-form::placeholder {
+.subscribe-form input::placeholder {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
   color: var(--input-grey);
   line-height: 24px;
 }
 
-/* Map and contacts */
+/* === MAP AND CONTACTS === */
 
 .map img {
   background-color: rgb(var(--basic-white));
@@ -288,7 +295,7 @@ a {
   color: inherit;
 }
 
-/* Footer */
+/* === FOOTER === */
 
 .social-list {
   list-style: none;
@@ -324,7 +331,7 @@ a {
   font-size: 12px;
 }
 
-/* Catalog */
+/* === CATALOG === */
 
 .site-navigation-current {
   background-color: var(--active-orange);
@@ -336,7 +343,7 @@ a {
   font-weight: 700;
 }
 
-/* Bread Crumbs */
+/* === BREAD CRUMBS === */
 
 .bread-crumbs-list {
   list-style: none;
@@ -354,7 +361,7 @@ a {
   border-bottom: 1px solid rgba(var(--basic-white), 0.2);
 }
 
-/* Search Filter */
+/* === SEARCH FILTER === */
 
 .filter {
   font-size: 16px;
@@ -417,7 +424,7 @@ a {
   box-shadow: inset 0px 2px 1px var(--shadow-grey);
 }
 
-/* Pagination */
+/* === PAGINATION === */
 
 .pagination-list {
   list-style: none;
