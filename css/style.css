@@ -42,9 +42,6 @@
 /* === GLOBAL === */
 
 .body {
-  width: 1146px;
-  margin: 0 auto;
-  padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -55,6 +52,12 @@
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
+}
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 img {
@@ -122,11 +125,21 @@ a {
   border-bottom: 1px solid rgba(var(--pin-orange), 0.3);
 }
 
-/* === NAVIGATION === */
+/* === HEADER AND NAVIGATION === */
+
+.main-header {
+  padding-top: 9px;
+  margin: 0;
+  outline: 5px solid rgba(0, 255, 42, 0.3);
+  outline-offset: -5px;
+}
 
 .main-navigation {
   display: grid;
   grid-template-columns: 154px 1fr min-content;
+
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
 }
 
 .site-navigation {
@@ -135,6 +148,7 @@ a {
   list-style: none;
   padding: 0;
   margin: 0;
+  align-items: baseline;
 }
 
 .site-navigation-link {
@@ -259,10 +273,6 @@ a {
   line-height: 35px;
 }
 
-.product-image-wrapper img {
-  border-radius: 50%;
-}
-
 /* === ABOUT === */
 
 .about {
@@ -356,6 +366,9 @@ a {
 .main-footer {
   display: flex;
   justify-content: space-between;
+
+  outline: 5px solid rgba(0, 255, 42, 0.3);
+  outline-offset: -5px;
 }
 
 .social-list {
@@ -421,6 +434,9 @@ a {
 
 .bread-crumbs-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 .bread-crumbs-item {
@@ -441,6 +457,10 @@ a {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .filter legend {
@@ -470,11 +490,22 @@ a {
   font-weight: 500;
 }
 
+.filter-fill {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.filter-fat {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
 .filter-select:hover {
   color: var(--grey);
   background-color: rgb(var(--basic-white));
 }
-
 
 .filter-button {
   font-size: 16px;
@@ -502,6 +533,9 @@ a {
 
 .pagination-list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 .pagination-item a {
