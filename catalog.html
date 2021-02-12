@@ -13,37 +13,49 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="body container">
+<body class="body">
 
   <header class="main-header">
     <nav class="main-navigation">
       <a href="index.html">
         <img src="img/logo-gllacy-shop.svg" width="154" height="64" alt="Логотип магазина Глейси">
       </a>
-      <ul class="site-navigation">
+      <ul class="site-navigation reset-list">
         <li><a class="site-navigation-current">Каталог</a></li>
         <li><a class="site-navigation-link" href="#!">Доставка и оплата</a></li>
         <li><a class="site-navigation-link" href="#!">О компании</a></li>
       </ul>
-      <ul class="user-navigation">
-        <li><a class="search-link" href="#!">Поиск</a></li>
-        <li><a class="login-link" href="#!">Вход</a></li>
-        <li><a class="cart-link" href="#!">Корзина</a></li>
+      <ul class="user-navigation reset-list">
+        <li>
+          <a class="user-navigation-link search-link" href="#!">
+            <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 14.6652l-4.9215-4.93226c.9042-1.25106 1.3041-2.79793 1.1199-4.3316-.1843-1.53367-.939-2.94124-2.1136-3.94152C8.91022.45954 7.40233-.05982 5.86234.00549c-1.54.0653-2.99871.71048-4.08477 1.80663C.69152 2.90827.05808 4.3747.0038 5.91849c-.05428 1.54379.47459 3.05127 1.48096 4.22131 1.00637 1.17 2.41616 1.9165 3.94775 2.0903 1.53158.1738 3.07221-.2379 4.31412-1.1529L14.6586 16 16 14.6652zm-9.91848-4.2885c-.84073 0-1.66257-.2499-2.36161-.71796-.69904-.46811-1.24387-1.13344-1.5656-1.91187a4.26881 4.26881 0 01-.2419-2.46136c.16402-.82638.56887-1.58545 1.16335-2.18124.59448-.59578 1.3519-1.00151 2.17647-1.16589a4.24226 4.24226 0 012.45599.24242c.77673.32244 1.44061.86847 1.90769 1.56903.46709.70057.71639 1.52421.71639 2.36678-.0025 1.12907-.45115 2.21119-1.24779 3.00957-.79663.79838-1.87638 1.24802-3.00299 1.25052z" fill="#fff"/></svg>
+          </a>
+        </li>
+        <li>
+          <a class="user-navigation-link login-link" href="#!">
+            <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff"/><path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2.00005 2.00005 0 002 2h13c.5304 0 1.0391-.2107 1.4142-.5858S20 17.5304 20 17V2a1.9999 1.9999 0 00-.5858-1.41421A2.00008 2.00008 0 0018 0z" fill="#fff"/></svg>Вход
+          </a>
+        </li>
+        <li>
+          <a class="user-navigation-link cart-full-link" href="#!">
+            <svg width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.03359 20c1.11305 0 2.01535-.8954 2.01535-2s-.9023-2-2.01535-2c-1.11305 0-2.01536.8954-2.01536 2s.90231 2 2.01536 2zM16.1027 20c1.113 0 2.0153-.8954 2.0153-2s-.9023-2-2.0153-2c-1.1131 0-2.0154.8954-2.0154 2s.9023 2 2.0154 2zM5.70345 2l-.24184-2H0v2h3.66795l1.51151 13H19.2869L21 2H5.70345zM17.5034 13H6.97313L5.96545 4H18.6924l-1.189 9z" fill="#343434"/><path d="M5.93506 4.03003L6.97297 13H17.5032l1.1891-8.96997H5.93506z" fill="#E84D37"/></svg>2 товара
+          </a>
+        </li>
       </ul>
     </nav>
     <div class="header-info">
-      <p class="header-time">с 10 до 20, ежедневно</p>
+      <p class="header-time reset-text">с 10 до 20, ежедневно</p>
       <a class="header-phone" href="tel:88124502525">8 812 450-25-25</a>
     </div>
   </header>
 
   <main>
-    <ul class="bread-crumbs-list">
+    <ul class="bread-crumbs-list reset-list">
       <li class="bread-crumbs-item"><a class="link-light" href="index.html">Главная</a></li>
       <li class="bread-crumbs-item"><a class="link-light" href="#!">Каталог</a></li>
-      <li class="bread-crumbs-item">Сливочное</li>
+      <li class="bread-crumbs-item bread-crumbs-current">Сливочное</li>
     </ul>
-    <h1 class="catalog-header">Сливочное мороженое</h1>
+    <h1 class="catalog-header reset-header">Сливочное мороженое</h1>
 
     <!--Фильтр поиска начало-->
     <section>
@@ -61,12 +73,18 @@
         <fieldset>
           <legend>Цена: 100 ₽ – 500 ₽</legend>
           <div class="filter-range">
-            <input type="range">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
           </div>
         </fieldset>
         <fieldset>
           <legend>Жирность:</legend>
-          <ul class="filter-fat">
+          <ul class="filter-fat reset-list">
             <li class="filter-radio">
               <input type="radio" name="fat-content" value="fat-0" id="fat-0">
               <label for="fat-0">0%</label>
@@ -87,7 +105,7 @@
         </fieldset>
         <fieldset>
           <legend>Наполнители:</legend>
-          <ul class="filter-fill">
+          <ul class="filter-fill reset-list">
             <li class="filter-checkbox">
               <input type="checkbox" name="chocolate" id="chocolate" checked>
               <label for="chocolate">шоколадные</label>
@@ -117,7 +135,7 @@
 
     <section class="catalog">
       <h2 class="visually-hidden">Список сливочного мороженого</h2>
-      <ul class="catalog-list">
+      <ul class="catalog-list reset-list">
         <li class="catalog-item">
           <article class="product">
             <div class="product-image-wrapper">
@@ -125,7 +143,7 @@
                 alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
             </div>
             <section class="product-description">
-              <p class="product-price">310 ₽<span class="product-weight">/кг</span></p>
+              <p class="product-price reset-text">310 ₽<span class="product-weight">/кг</span></p>
               <a class="link-light link-product" href="#!">Сливочное с апельсиновым<br>джемом и цитрусовой стружкой</a>
             </section>
           </article>
@@ -137,7 +155,7 @@
                 alt="Сливочно-кофейное мороженое с кусочками шоколада">
             </div>
             <section class="product-description">
-              <p class="product-price">380 ₽<span class="product-weight">/кг</span></p>
+              <p class="product-price reset-text">380 ₽<span class="product-weight">/кг</span></p>
               <a class="link-light link-product" href="#!">Сливочно-кофейное с кусочками<br>шоколада</a>
             </section>
           </article>
@@ -149,7 +167,7 @@
                 alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </div>
             <section class="product-description">
-              <p class="product-price">355 ₽<span class="product-weight">/кг</span></p>
+              <p class="product-price reset-text">355 ₽<span class="product-weight">/кг</span></p>
               <a class="link-light link-product" href="#!">Сливочно-клубничное<br>с присыпкой из белого шоколада</a>
             </section>
           </article>
@@ -161,7 +179,7 @@
                 alt="Сливочное крем-брюле с карамельной подливкой">
             </div>
             <section class="product-description">
-              <p class="product-price">415 ₽<span class="product-weight">/кг</span></p>
+              <p class="product-price reset-text">415 ₽<span class="product-weight">/кг</span></p>
               <a class="link-light link-product" href="#!">Сливочное крем-брюле<br>с карамельной подливкой</a>
             </section>
           </article>
@@ -172,7 +190,7 @@
               <img src="img/ice-cream-lingonberry.png" width="267" height="267" alt="Сливочное с брусничным джемом">
             </div>
             <section class="product-description">
-              <p class="product-price">325 ₽<span class="product-weight">/кг</span></p>
+              <p class="product-price reset-text">325 ₽<span class="product-weight">/кг</span></p>
               <a class="link-light link-product" href="#!">Сливочное<br>с брусничным джемом</a>
             </section>
           </article>
@@ -184,7 +202,7 @@
                 alt="Сливочно-черничное с цельными ягодами черники">
             </div>
             <section class="product-description">
-              <p class="product-price">410 ₽<span class="product-weight">/кг</span></p>
+              <p class="product-price reset-text">410 ₽<span class="product-weight">/кг</span></p>
               <a class="link-light link-product" href="#!">Сливочно-черничное с цельными<br>ягодами черники</a>
             </section>
           </article>
@@ -196,7 +214,7 @@
                 alt="Сливочно-лимонное с карамельной присыпкой">
             </div>
             <section class="product-description">
-              <p class="product-price">315 ₽<span class="product-weight">/кг</span></p>
+              <p class="product-price reset-text">315 ₽<span class="product-weight">/кг</span></p>
               <a class="link-light link-product" href="#!">Сливочно-лимонное с<br>карамельной присыпкой</a>
             </section>
           </article>
@@ -207,7 +225,7 @@
               <img src="img/ice-cream-chocolate.png" width="267" height="267" alt="Сливочное с шоколадной стружкой">
             </div>
             <section class="product-description">
-              <p class="product-price">320 ₽<span class="product-weight">/кг</span></p>
+              <p class="product-price reset-text">320 ₽<span class="product-weight">/кг</span></p>
               <a class="link-light link-product" href="#!">Сливочное с шоколадной<br>стружкой</a>
             </section>
           </article>
@@ -219,7 +237,7 @@
                 alt="Сливочно-ванильное с кусочками шоколада">
             </div>
             <section class="product-description">
-              <p class="product-price">440 ₽<span class="product-weight">/кг</span></p>
+              <p class="product-price reset-text">440 ₽<span class="product-weight">/кг</span></p>
               <a class="link-light link-product" href="#!">Сливочно-ванильное<br>с кусочками шоколада</a>
             </section>
           </article>
@@ -230,7 +248,7 @@
               <img src="img/ice-cream-menthol.png" width="267" height="267" alt="Сливочное с ментоловым сиропом">
             </div>
             <section class="product-description">
-              <p class="product-price">435 ₽<span class="product-weight">/кг</span></p>
+              <p class="product-price reset-text">435 ₽<span class="product-weight">/кг</span></p>
               <a class="link-light link-product" href="#!">Сливочное<br>с ментоловым сиропом</a>
             </section>
           </article>
@@ -242,7 +260,7 @@
                 alt="Сливочное с кусочками черного шоколада">
             </div>
             <section class="product-description">
-              <p class="product-price">355 ₽<span class="product-weight">/кг</span></p>
+              <p class="product-price reset-text">355 ₽<span class="product-weight">/кг</span></p>
               <a class="link-light link-product" href="#!">Сливочное с кусочками черного<br>шоколада</a>
             </section>
           </article>
@@ -253,7 +271,7 @@
               <img src="img/ice-cream-mint.png" width="267" height="267" alt="Сливочное с мятным сиропом">
             </div>
             <section class="product-description">
-              <p class="product-price">420 ₽<span class="product-weight">/кг</span></p>
+              <p class="product-price reset-text">420 ₽<span class="product-weight">/кг</span></p>
               <a class="link-light link-product" href="#!">Сливочное с мятным сиропом</a>
             </section>
           </article>
@@ -261,22 +279,24 @@
       </ul>
     </section>
 
-    <ul class="pagination-list">
-      <li class="pagination-item">1</li>
-      <li class="pagination-item">
-        <a href="#!">2</a>
+    <ul class="pagination-list reset-list">
+      <li>
+        <a class="pagination-current">1</a>
       </li>
-      <li class="pagination-item">
-        <a href="#!">3</a>
+      <li>
+        <a class="pagination-item" href="#!">2</a>
       </li>
-      <li class="pagination-item">
-        <a href="#!">4</a>
+      <li>
+        <a class="pagination-item" href="#!">3</a>
       </li>
-      <li class="pagination-item">
-        <a href="#!">5</a>
+      <li>
+        <a class="pagination-item" href="#!">4</a>
       </li>
-      <li class="pagination-item">
-        <a href="#!"></a>
+      <li>
+        <a class="pagination-item" href="#!">5</a>
+      </li>
+      <li>
+        <a class="pagination-item" href="#!"></a>
       </li>
     </ul>
 
@@ -285,7 +305,7 @@
   <footer class="main-footer">
     <section class="social">
       <h2 class="visually-hidden">Соцсети</h2>
-      <ul class="social-list">
+      <ul class="social-list reset-list">
         <li class="social-item facebook"><a class="social-item-link" href="#!">
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -334,7 +354,7 @@
 
     <section class="links">
       <h2 class="visually-hidden">Ссылки</h2>
-      <ul class="links-list">
+      <ul class="links-list reset-list">
         <li><a class="link-light" href="#!">Для поставщиков</a></li>
         <li><a class="link-light" href="#!">Наши документы</a></li>
         <li><a class="link-light" href="#!">О производстве</a></li>
@@ -382,7 +402,7 @@
             fill="white" />
         </svg>
       </a>
-      <p>Сделано в <a class="link-light" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+      <p class="reset-text">Сделано в <a class="link-light" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
     </section>
   </footer>
 
