@@ -301,8 +301,8 @@ a {
 .submenu-list {
   display: none;
   position: absolute;
-  top: 38px;
-  left: -8px;
+  top: 62px;
+  left: 162px;
   width: 143px;
   background-color: rgb(var(--basic-white));
   border-radius: 4px;
@@ -341,9 +341,7 @@ a {
   padding-bottom: 7px;
 }
 
-.submenu-list:hover,
-.catalog-link:focus .submenu-list,
-.catalog-link:hover .submenu-list {
+.catalog-link:hover + .submenu-list {
   display: block;
 }
 
