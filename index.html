@@ -19,7 +19,25 @@
     <nav class="main-navigation">
       <img src="img/logo-gllacy-shop.svg" width="154" height="64" alt="Логотип магазина Глейси">
       <ul class="site-navigation reset-list">
-        <li><a class="site-navigation-link" href="catalog.html">Каталог</a></li>
+        <li class="catalog-link"><a class="site-navigation-link" href="#!">Каталог</a>
+          <ul class="submenu-list reset-list">
+            <li class="submenu-item submenu-new">
+              <a class="submenu-link" href="#!">Новинки</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-link" href="catalog.html">Сливочное</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-link" href="#!">Щербеты</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-link" href="#!">Фруктовый лёд</a>
+            </li>
+            <li class="submenu-item">
+              <a class="submenu-link" href="#!">Мелорин</a>
+            </li>
+          </ul>
+        </li>
         <li><a class="site-navigation-link" href="#!">Доставка и оплата</a></li>
         <li><a class="site-navigation-link" href="#!">О компании</a></li>
       </ul>
@@ -94,51 +112,54 @@
       <ul class="catalog-list reset-list">
         <li class="catalog-item">
           <article class="product">
-            <div class="product-image-wrapper">
+            <div class="product-image-wrapper product-hit-wrapper">
               <img src="img/ice-cream-citrus.png" width="267" height="267"
                 alt="Сливочное мороженое с апельсиновым джемом и цитрусовой стружкой">
             </div>
-            <section class="product-description">
-              <p class="product-price reset-text">310 ₽<span class="product-weight">/кг</span></p>
-              <a class="link-light link-product" href="#!">Сливочное с апельсиновым<br>джемом и цитрусовой
-                стружкой</a>
-            </section>
+            <p class="product-price reset-text">310 ₽<span class="product-weight">/кг</span></p>
+            <p class="link-product">
+              <a class="link-light" href="#!">Сливочное с апельсиновым<br>джемом и цитрусовой стружкой</a>
+            </p>
+            <button class="button product-button" type="button">Быстрый просмотр</button>
           </article>
         </li>
         <li class="catalog-item">
           <article class="product">
-            <div class="product-image-wrapper">
+            <div class="product-image-wrapper product-hit-wrapper">
               <img src="img/ice-cream-coffee.png" width="267" height="267"
                 alt="Сливочно-кофейное мороженое с кусочками шоколада">
             </div>
-            <section class="product-description">
-              <p class="product-price reset-text">380 ₽<span class="product-weight">/кг</span></p>
-              <a class="link-light link-product" href="#!">Сливочно-кофейное с кусочками<br>шоколада</a>
-            </section>
+            <p class="product-price reset-text">380 ₽<span class="product-weight">/кг</span></p>
+            <p class="link-product">
+              <a class="link-light" href="#!">Сливочно-кофейное с кусочками<br>шоколада</a>
+            </p>
+            <button class="button product-button" type="button">Быстрый просмотр</button>
           </article>
         </li>
         <li class="catalog-item">
           <article class="product">
-            <div class="product-image-wrapper">
+            <div class="product-image-wrapper product-hit-wrapper">
               <img src="img/ice-cream-strawberry.png" width="267" height="267"
                 alt="Сливочно-клубничное с присыпкой из белого шоколада">
             </div>
-            <section class="product-description">
-              <p class="product-price reset-text">355 ₽<span class="product-weight">/кг</span></p>
-              <a class="link-light link-product" href="#!">Сливочно-клубничное<br>с присыпкой из белого шоколада</a>
-            </section>
+            <p class="product-price reset-text">355 ₽<span class="product-weight">/кг</span></p>
+            <p class="link-product">
+              <a class="link-light" href="#!">Сливочно-клубничное<br>с присыпкой из белого шоколада</a>
+            </p>
+            <button class="button product-button" type="button">Быстрый просмотр</button>
           </article>
         </li>
         <li class="catalog-item">
           <article class="product">
-            <div class="product-image-wrapper">
+            <div class="product-image-wrapper product-hit-wrapper">
               <img src="img/ice-cream-caramel.png" width="267" height="267"
                 alt="Сливочное крем-брюле с карамельной подливкой">
             </div>
-            <section class="product-description">
-              <p class="product-price reset-text">415 ₽<span class="product-weight">/кг</span></p>
-              <a class="link-light link-product" href="#!">Сливочное крем-брюле<br>с карамельной подливкой</a>
-            </section>
+            <p class="product-price reset-text">415 ₽<span class="product-weight">/кг</span></p>
+            <p class="link-product">
+              <a class="link-light" href="#!">Сливочное крем-брюле<br>с карамельной подливкой</a>
+            </p>
+            <button class="button product-button" type="button">Быстрый просмотр</button>
           </article>
         </li>
       </ul>
@@ -176,7 +197,7 @@
             что у нас происходит. Обещаем не спамить<br>и не слать всякой ненужной ерунды. Честно =)</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/courses" method="post">
             <input class="subscribe-input" type="email" name="email" placeholder="email@example.com">
-            <input class="button subscribe-button" type="submit">
+            <input class="button subscribe-button" type="submit" value="Отправить">
           </form>
         </div>
       </article>
@@ -300,6 +321,29 @@
           Academy</a> © 2019</p>
     </section>
   </footer>
+
+  <!--Модальное окно-->
+
+  <section class="modal">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="feedback-header reset-text">Мы обязательно вам ответим!</p>
+      <p class="feedback-item reset-text">
+        <label class="feedback-label" for="feedback-name">Ваше имя</label>
+        <input class="feedback-input" id="feedback-name" type="text" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="feedback-item reset-text">
+        <label class="feedback-label" for="feedback-email">Ваш Email</label>
+        <input class="feedback-input" id="feedback-email" type="email" name="email" placeholder="email@example.com">
+      </p>
+      <p class="feedback-item reset-text">
+        <label class="feedback-label" for="feedback-text">Текст сообщения в свободной форме</label>
+        <textarea class="feedback-textarea" id="feedback-text" rows="7">В свободной форме</textarea>
+      </p>
+      <button class="button feedback-button" type="submit">Отправить</button>
+    </form>
+    <button class="feedback-close-button"></button>
+  </section>
 
 </body>
 
