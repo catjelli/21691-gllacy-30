@@ -21,25 +21,89 @@
         <img src="img/logo-gllacy-shop.svg" width="154" height="64" alt="Логотип магазина Глейси">
       </a>
       <ul class="site-navigation reset-list">
-        <li><a class="site-navigation-current">Каталог</a></li>
-        <li><a class="site-navigation-link" href="#!">Доставка и оплата</a></li>
-        <li><a class="site-navigation-link" href="#!">О компании</a></li>
+        <li class="catalog-link">
+          <a class="site-navigation-current">Каталог</a>
+          <ul class="submenu-list reset-list">
+            <li class="submenu-item submenu-new">
+              <a href="#!">Новинки</a>
+            </li>
+            <li class="submenu-item submenu-current">
+              <a href="catalog.html">Сливочное</a>
+            </li>
+            <li class="submenu-item">
+              <a href="#!">Щербеты</a>
+            </li>
+            <li class="submenu-item">
+              <a href="#!">Фруктовый лёд</a>
+            </li>
+            <li class="submenu-item">
+              <a href="#!">Мелорин</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="site-navigation-link" href="#!">Доставка и оплата</a>
+        </li>
+        <li>
+          <a class="site-navigation-link" href="#!">О компании</a>
+        </li>
       </ul>
       <ul class="user-navigation reset-list">
-        <li>
+        <li class="search-dropdown">
           <a class="user-navigation-link search-link" href="#!">
             <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 14.6652l-4.9215-4.93226c.9042-1.25106 1.3041-2.79793 1.1199-4.3316-.1843-1.53367-.939-2.94124-2.1136-3.94152C8.91022.45954 7.40233-.05982 5.86234.00549c-1.54.0653-2.99871.71048-4.08477 1.80663C.69152 2.90827.05808 4.3747.0038 5.91849c-.05428 1.54379.47459 3.05127 1.48096 4.22131 1.00637 1.17 2.41616 1.9165 3.94775 2.0903 1.53158.1738 3.07221-.2379 4.31412-1.1529L14.6586 16 16 14.6652zm-9.91848-4.2885c-.84073 0-1.66257-.2499-2.36161-.71796-.69904-.46811-1.24387-1.13344-1.5656-1.91187a4.26881 4.26881 0 01-.2419-2.46136c.16402-.82638.56887-1.58545 1.16335-2.18124.59448-.59578 1.3519-1.00151 2.17647-1.16589a4.24226 4.24226 0 012.45599.24242c.77673.32244 1.44061.86847 1.90769 1.56903.46709.70057.71639 1.52421.71639 2.36678-.0025 1.12907-.45115 2.21119-1.24779 3.00957-.79663.79838-1.87638 1.24802-3.00299 1.25052z" fill="#fff"/></svg>
           </a>
+          <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="post">
+            <label class="search-label" for="search"></label>
+            <input class="search-input" type="search" name="search" id="search" placeholder="Крем-брюле">
+          </form>
         </li>
-        <li>
+        <li class="login-dropdown">
           <a class="user-navigation-link login-link" href="#!">
             <svg width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff"/><path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2.00005 2.00005 0 002 2h13c.5304 0 1.0391-.2107 1.4142-.5858S20 17.5304 20 17V2a1.9999 1.9999 0 00-.5858-1.41421A2.00008 2.00008 0 0018 0z" fill="#fff"/></svg>Вход
           </a>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p class="reset-text">
+              <label class="visually-hidden" for="login-email">Логин</label>
+              <input class="login-form-input" type="email" name="login-email" id="login-email" placeholder="email@example.com">
+            </p>
+            <p class="reset-text">
+              <label class="visually-hidden" for="login-password">Пароль</label>
+              <input class="login-form-input" type="password" name="login-password" id="login-password" placeholder="••••••••">
+            </p>
+            <div class="login-form-wrapper">
+              <button class="button login-form-button" type="submit">Войти</button>
+              <p class="login-extra reset-text">
+                <a href="#!">Забыли пароль?</a>
+                <a href="#!">Новая регистрация</a>
+              </p>
+            </div>
+          </form>
         </li>
-        <li>
+        <li class="cart-dropdown">
           <a class="user-navigation-link cart-full-link" href="#!">
             <svg width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.03359 20c1.11305 0 2.01535-.8954 2.01535-2s-.9023-2-2.01535-2c-1.11305 0-2.01536.8954-2.01536 2s.90231 2 2.01536 2zM16.1027 20c1.113 0 2.0153-.8954 2.0153-2s-.9023-2-2.0153-2c-1.1131 0-2.0154.8954-2.0154 2s.9023 2 2.0154 2zM5.70345 2l-.24184-2H0v2h3.66795l1.51151 13H19.2869L21 2H5.70345zM17.5034 13H6.97313L5.96545 4H18.6924l-1.189 9z" fill="#343434"/><path d="M5.93506 4.03003L6.97297 13H17.5032l1.1891-8.96997H5.93506z" fill="#E84D37"/></svg>2 товара
           </a>
+          <section class="cart">
+            <div class="cart-item">
+              <div class="cart-image-wrapper">
+                <img src="img/ice-cream-citrus.png" width="33" height="33">
+              </div>
+              <p class="cart-item-title reset-text">Пломбир с апельсиновым джемом</p>
+              <p class="cart-item-count reset-text">1,5 кг х <span>200 руб.</span></p>
+              <p class="cart-item-price reset-text">300 руб.</p>
+            </div>
+            <div class="cart-item">
+              <div class="cart-image-wrapper">
+                <img src="img/ice-cream-strawberry.png" width="33" height="33">
+              </div>
+              <p class="cart-item-title cart-strawberry-title reset-text">Клубничный пломбир с присыпкой<br>из белого шоколада</p>
+              <p class="cart-item-count reset-text">1,5 кг х <span>300 руб.</span></p>
+              <p class="cart-item-price reset-text">450 руб.</p>
+            </div>
+            <p class="cart-amount text-reset">Итого: 750 руб.</p>
+            <button class="button cart-button" type="submit">Оформить заказ</button>
+          </section>
         </li>
       </ul>
     </nav>
