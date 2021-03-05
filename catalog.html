@@ -54,7 +54,7 @@
       </ul>
       <ul class="user-navigation catalog-user-navigation reset-list">
         <li class="search-dropdown">
-          <a class="user-navigation-link search-link" href="#!">
+          <a class="user-navigation-link search-link" href="#!" aria-label="Поиск по сайту">
             <svg aria-hidden="true" focusable="false" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 14.6652l-4.9215-4.93226c.9042-1.25106 1.3041-2.79793 1.1199-4.3316-.1843-1.53367-.939-2.94124-2.1136-3.94152C8.91022.45954 7.40233-.05982 5.86234.00549c-1.54.0653-2.99871.71048-4.08477 1.80663C.69152 2.90827.05808 4.3747.0038 5.91849c-.05428 1.54379.47459 3.05127 1.48096 4.22131 1.00637 1.17 2.41616 1.9165 3.94775 2.0903 1.53158.1738 3.07221-.2379 4.31412-1.1529L14.6586 16 16 14.6652zm-9.91848-4.2885c-.84073 0-1.66257-.2499-2.36161-.71796-.69904-.46811-1.24387-1.13344-1.5656-1.91187a4.26881 4.26881 0 01-.2419-2.46136c.16402-.82638.56887-1.58545 1.16335-2.18124.59448-.59578 1.3519-1.00151 2.17647-1.16589a4.24226 4.24226 0 012.45599.24242c.77673.32244 1.44061.86847 1.90769 1.56903.46709.70057.71639 1.52421.71639 2.36678-.0025 1.12907-.45115 2.21119-1.24779 3.00957-.79663.79838-1.87638 1.24802-3.00299 1.25052z" fill="#fff"/></svg>
           </a>
           <form class="search-form" action="https://echo.htmlacademy.ru/courses" method="post">
@@ -63,7 +63,7 @@
           </form>
         </li>
         <li class="login-dropdown">
-          <a class="user-navigation-link login-link" href="#!">
+          <a class="user-navigation-link login-link" href="#!" aria-label="Вход в личный кабинет">
             <svg aria-hidden="true" focusable="false" width="20" height="19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.04 14.88l6.92-5.38-6.92-5.37v2.91H0v4.92h6.04v2.92z" fill="#fff"/><path d="M18 0H5a2 2 0 00-2 2v2h2V2h13v15H5v-2H3v2a2.00005 2.00005 0 002 2h13c.5304 0 1.0391-.2107 1.4142-.5858S20 17.5304 20 17V2a1.9999 1.9999 0 00-.5858-1.41421A2.00008 2.00008 0 0018 0z" fill="#fff"/></svg>Вход
           </a>
           <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
@@ -85,7 +85,7 @@
           </form>
         </li>
         <li class="cart-dropdown">
-          <a class="user-navigation-link cart-full-link" href="#!">
+          <a class="user-navigation-link cart-full-link" href="#!" aria-label="Корзина">
             <svg aria-hidden="true" focusable="false" width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.03359 20c1.11305 0 2.01535-.8954 2.01535-2s-.9023-2-2.01535-2c-1.11305 0-2.01536.8954-2.01536 2s.90231 2 2.01536 2zM16.1027 20c1.113 0 2.0153-.8954 2.0153-2s-.9023-2-2.0153-2c-1.1131 0-2.0154.8954-2.0154 2s.9023 2 2.0154 2zM5.70345 2l-.24184-2H0v2h3.66795l1.51151 13H19.2869L21 2H5.70345zM17.5034 13H6.97313L5.96545 4H18.6924l-1.189 9z" fill="#343434"/><path d="M5.93506 4.03003L6.97297 13H17.5032l1.1891-8.96997H5.93506z" fill="#E84D37"/></svg>2 товара
           </a>
           <section class="cart">
@@ -132,7 +132,8 @@
       <form class="filter" action="https://echo.htmlacademy.ru/courses" method="get">
         <fieldset>
           <legend>Сортировка:</legend>
-          <select class="filter-select" name="sort">
+          <label for="sort" class="visually-hidden">Сортировка</label>
+          <select class="filter-select" name="sort" id="sort">
             <option value="popular">по популярности</option>
             <option value="cheap">сначала недорогие</option>
             <option value="expensive">сначала дорогие</option>
@@ -213,7 +214,7 @@
             </div>
             <p class="product-price reset-text">310 ₽<span class="product-weight">/кг</span></p>
             <p class="link-product">
-              <a class="link-light" href="#!">Сливочное с апельсиновым<br>джемом и цитрусовой стружкой</a>
+              <a class="link-light" href="#!">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             </p>
             <a class="button product-button" href="#!">Быстрый просмотр</a>
           </article>
@@ -226,7 +227,7 @@
             </div>
             <p class="product-price reset-text">380 ₽<span class="product-weight">/кг</span></p>
             <p class="link-product">
-              <a class="link-light" href="#!">Сливочно-кофейное с кусочками<br>шоколада</a>
+              <a class="link-light" href="#!">Сливочно-кофейное с кусочками шоколада</a>
             </p>
             <a class="button product-button" href="#!">Быстрый просмотр</a>
           </article>
@@ -276,7 +277,7 @@
             </div>
             <p class="product-price reset-text">410 ₽<span class="product-weight">/кг</span></p>
             <p class="link-product">
-              <a class="link-light" href="#!">Сливочно-черничное с цельными<br>ягодами черники</a>
+              <a class="link-light" href="#!">Сливочно-черничное с цельными ягодами черники</a>
             </p>
             <a class="button product-button" href="#!">Быстрый просмотр</a>
           </article>
@@ -288,7 +289,7 @@
             </div>
             <p class="product-price reset-text">315 ₽<span class="product-weight">/кг</span></p>
             <p class="link-product">
-              <a class="link-light" href="#!">Сливочно-лимонное с<br>карамельной присыпкой</a>
+              <a class="link-light" href="#!">Сливочно-лимонное с карамельной присыпкой</a>
             </p>
             <a class="button product-button" href="#!">Быстрый просмотр</a>
           </article>
@@ -444,7 +445,7 @@
 
     <section class="copyright">
       <h2 class="visually-hidden">Copyright</h2>
-      <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="HTML Academy">
+      <a class="copyright-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="перейти на сайт HTML Academy">
         <svg aria-hidden="true" focusable="false" width="108" height="39" viewBox="0 0 108 39" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             d="M44.582 28.426C44.7698 28.4144 44.9553 28.3771 45.134 28.3151V29.7263C44.7564 29.8745 44.3566 29.9496 43.9538 29.948C43.6117 29.9839 43.2676 29.9061 42.9692 29.7255C42.6707 29.5448 42.4327 29.2703 42.2882 28.94C41.3994 29.6974 40.2878 30.1005 39.1473 30.0791C37.6339 30.0791 36.2348 29.2021 36.2348 27.3776C36.2348 25.1197 38.2145 24.4241 39.9468 24.4241C40.6765 24.4355 41.4034 24.5233 42.1169 24.6862V24.3737C42.1169 23.275 41.3554 22.4988 39.9277 22.4988C38.894 22.5023 37.8726 22.7358 36.9296 23.1843V21.3699C37.9559 20.9951 39.0325 20.7977 40.1181 20.7852C42.4785 20.7852 43.9253 21.9747 43.9253 24.6459V27.8111C43.912 27.962 43.9555 28.1123 44.0465 28.2294C44.1374 28.3465 44.2683 28.4207 44.4107 28.436C44.4679 28.4427 44.5258 28.4393 44.582 28.426ZM38.1479 27.2163C38.177 27.5946 38.3467 27.9451 38.6198 28.1908C38.8929 28.4366 39.247 28.5574 39.6041 28.5268H39.7088C40.6057 28.5405 41.4713 28.1782 42.1169 27.5187V25.9966C41.522 25.8626 40.9165 25.7883 40.3084 25.7749C39.2615 25.7749 38.1479 26.1277 38.1479 27.2365V27.2163Z"
@@ -482,7 +483,8 @@
             fill="white" />
         </svg>
       </a>
-      <p class="reset-text">Сделано в <a class="link-light" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+      <p class="reset-text">Сделано в <a class="link-light" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Перейти на сайт интенсива по HTML и CSS в HTML Academy">HTML
+          Academy</a> © 2019</p>
     </section>
   </footer>
 
