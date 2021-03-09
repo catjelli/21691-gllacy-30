@@ -63,16 +63,19 @@
   background-position: top center;
 }
 
+/* Обёртка body для первого слайда */
 .site-wrapper-green {
   background-color: var(--background-green);
   background-image: url(../img/slider-1.png);
 }
 
+/* Обёртка body для второго слайда */
 .site-wrapper-blue {
   background-color: var(--background-blue);
   background-image: url(../img/slider-2.png);
 }
 
+/* Обёртка body для третьего слайда */
 .site-wrapper-brown {
   background-color: var(--background-brown);
   background-image: url(../img/slider-3.png);
@@ -133,6 +136,7 @@ a {
 
 .button:hover {
   background: var(--button-hover);
+  box-shadow: 0px 2px 2px var(--shadow-hover-orange);
 }
 
 .button:active {
@@ -203,6 +207,7 @@ a {
   display: block;
   margin: 8px 15px;
   border-bottom: 1px solid rgba(var(--basic-white), 0.2);
+  padding-bottom: 1px;
 }
 
 .user-navigation {
@@ -331,6 +336,7 @@ a {
 
 .catalog-link {
   position: relative;
+  padding-bottom: 1px;
 }
 
 .submenu-list {
@@ -850,7 +856,7 @@ a {
 
 .product-button {
   position: absolute;
-  bottom: -25px;
+  bottom: -20px;
   left: 34px;
   z-index: 2;
   display: none;
@@ -1005,7 +1011,7 @@ a {
   color: var(--medium-grey);
   background-color: rgb(var(--basic-white));
   background-image: url(../img/background-letter.png);
-  background-repeat: repeat;
+  background-size: cover;
   border-radius: 16px;
 }
 
@@ -1080,6 +1086,7 @@ a {
 }
 
 .map iframe {
+  position: absolute;
   width: 100%;
   height: 430px;
   border: none;
@@ -1549,6 +1556,10 @@ a {
   padding-left: 15px;
 }
 
+.filter-select option {
+  color: var(--grey);
+}
+
 .filter-select:hover {
   color: var(--grey);
   background-color: rgb(var(--basic-white));
@@ -1651,6 +1662,17 @@ a {
   transform: translate(-50%, -50%);
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(var(--basic-black), 0.3);
+  display: none;
+}
+
 .modal {
   position: relative;
   display: none;
@@ -1659,6 +1681,11 @@ a {
 .modal-show {
   display: block;
   animation: bounce 0.6s;
+}
+
+.overlay-show {
+  display: block;
+  animation: show 0.4s;
 }
 
 .modal-error {
@@ -1809,5 +1836,19 @@ a {
   60%,
   80% {
     transform: translateX(10px);
+  }
+}
+
+@keyframes show {
+  0% {
+    background-color: transparent;
+  }
+
+  40% {
+    background-color: rgba(var(--basic-black), 0.2);
+  }
+
+  100% {
+    background-color: rgba(var(--basic-black), 0.3);
   }
 }

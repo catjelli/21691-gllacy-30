@@ -1,5 +1,6 @@
 const modalButton = document.querySelector(".contacts-button");
 const modal = document.querySelector(".modal");
+const modalOverlay = document.querySelector(".overlay");
 const modalClose = modal.querySelector(".feedback-close-button");
 const modalForm = modal.querySelector(".feedback-form");
 const modalName = modal.querySelector("[name=name]");
@@ -11,6 +12,7 @@ let storage = "";
 modalButton.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal.classList.add("modal-show");
+  modalOverlay.classList.add("overlay-show");
 
   if (storage) {
     modalName.value = storage;
@@ -38,6 +40,7 @@ modalClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   modal.classList.remove("modal-show");
   modal.classList.remove("modal-error");
+  modalOverlay.classList.remove("overlay-show");
 });
 
 window.addEventListener("keydown", function(evt) {
@@ -46,6 +49,7 @@ window.addEventListener("keydown", function(evt) {
       evt.preventDefault();
       modal.classList.remove("modal-show");
       modal.classList.remove("modal-error");
+      modalOverlay.classList.remove("overlay-show");
     }
   }
 });
