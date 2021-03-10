@@ -224,6 +224,7 @@ a {
   justify-content: space-around;
   align-items: center;
   margin-left: 10px;
+  padding-bottom: 2px;
   background-color: rgba(var(--basic-white), 0.2);
   border-radius: 20px;
 }
@@ -428,21 +429,24 @@ a {
 
 .search-dropdown {
   position: relative;
+  padding-bottom: 2px;
 }
 
 .login-dropdown {
   position: relative;
+  padding-bottom: 2px;
 }
 
 .search-form {
   position: absolute;
   right: 0;
-  bottom: -87px;
+  top: 100%;
   z-index: 10;
 
   display: none;
   width: 311px;
   height: 44px;
+  margin-top: 1px;
   padding: 20px 15px;
 
   background-color: var(--modal-grey);
@@ -489,12 +493,13 @@ a {
 .login-form {
   position: absolute;
   right: 0;
-  bottom: -218px;
+  top: 100%;
   z-index: 10;
 
   display: none;
   width: 241px;
   height: 172px;
+  margin-top: 1px;
   padding: 20px 17px 22px 19px;
 
   background-color: var(--modal-grey);
@@ -700,11 +705,12 @@ a {
 
 .cart-dropdown {
   position: relative;
+  padding-bottom: 2px;
 }
 
 .cart {
   position: absolute;
-  top: 35px;
+  top: 100%;
   left: -411px;
   z-index: 30;
 
@@ -714,7 +720,6 @@ a {
   padding-top: 20px;
   padding-bottom: 21px;
   padding-left: 41px;
-
 
   font-size: 13px;
   line-height: 16px;
@@ -843,7 +848,7 @@ a {
 
 .link-product {
   width: 267px;
-  margin-top: 8px;
+  margin-top: 6px;
   margin-bottom: 15px;
   line-height: 22px;
   text-align: center;
@@ -856,7 +861,7 @@ a {
 
 .product-button {
   position: absolute;
-  bottom: -20px;
+  bottom: -15px;
   left: 34px;
   z-index: 2;
   display: none;
