@@ -10,10 +10,10 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/mini-style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="body site-wrapper-green">
+<body class="body slider-wrapper slider-wrapper-first">
 
   <header class="main-header">
     <nav class="main-navigation">
@@ -96,23 +96,23 @@
 
     <section class="slider">
       <ul class="slider-list reset-list">
-        <li class="slider-item">
+        <li class="slider-item slider-item-first slider-item-current">
           <h2 class="slider-header reset-header">Крем-брюле и пломбир<br>с малиновым джемом</h2>
           <a class="button slider-button" href="#!">Давайте оба!</a>
         </li>
-        <li class="slider-item">
+        <li class="slider-item slider-item-second">
           <h2 class="slider-header reset-header">Шоколадный пломбир<br>и лимонный сорбет</h2>
           <a class="button slider-button" href="#!">Давайте оба!</a>
         </li>
-        <li class="slider-item slider-item-current">
+        <li class="slider-item slider-item-third">
           <h2 class="slider-header reset-header">Пломбир с помадкой<br>и клубничный щербет</h2>
           <a class="button slider-button" href="#!">Давайте оба!</a>
         </li>
       </ul>
       <div class="slider-controls">
-        <button class="current" type="button" aria-label="Первый слайд"></button>
-        <button type="button" aria-label="Второй слайд"></button>
-        <button type="button" aria-label="Третий слайд"></button>
+        <button class="slider-controls-first slider-controls-current" type="button" aria-label="Первый слайд"></button>
+        <button class="slider-controls-second" type="button" aria-label="Второй слайд"></button>
+        <button class="slider-controls-third" type="button" aria-label="Третий слайд"></button>
       </div>
     </section>
 
@@ -372,6 +372,7 @@
   </div>
 
   <script src="js/mini-feedback.js"></script>
+  <script src="js/slider.js"></script>
 
 </body>
 

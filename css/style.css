@@ -64,19 +64,19 @@
 }
 
 /* Обёртка body для первого слайда */
-.site-wrapper-green {
+.slider-wrapper-first {
   background-color: var(--background-green);
   background-image: url(../img/slider-1.png);
 }
 
 /* Обёртка body для второго слайда */
-.site-wrapper-blue {
+.slider-wrapper-second {
   background-color: var(--background-blue);
   background-image: url(../img/slider-2.png);
 }
 
 /* Обёртка body для третьего слайда */
-.site-wrapper-brown {
+.slider-wrapper-third {
   background-color: var(--background-brown);
   background-image: url(../img/slider-3.png);
 }
@@ -615,7 +615,9 @@ a {
   justify-content: space-between;
 }
 
-.slider-controls button {
+.slider-controls-first,
+.slider-controls-second,
+.slider-controls-third {
   width: 21px;
   height: 21px;
   padding: 0;
@@ -625,7 +627,9 @@ a {
   cursor: pointer;
 }
 
-.slider-controls button:hover {
+.slider-controls-first:hover,
+.slider-controls-second:hover,
+.slider-controls-third:hover {
   width: 21px;
   height: 21px;
   padding: 0;
@@ -635,7 +639,9 @@ a {
   cursor: pointer;
 }
 
-.slider-controls button:active {
+.slider-controls-first:active,
+.slider-controls-second:active,
+.slider-controls-third:active {
   width: 21px;
   height: 21px;
   padding: 0;
@@ -645,7 +651,7 @@ a {
   cursor: pointer;
 }
 
-.slider-controls .current {
+.slider-controls-current {
   background-color: rgb(var(--basic-white));
 }
 
